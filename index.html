@@ -1,158 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PIXELS!! - Get your own Website Today</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_services.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bootstrap demo</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
-
-</head>
-
-<body>
-
-  <!-- Navbar Code  -->
-  <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Code World!!</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Services
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Front-End Development</a></li>
-              <li><a class="dropdown-item" href="#">Backend-End Development</a></li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Join Us</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">Contact Us</a>
-          </li>
-        </ul>
-        <!-- <form class="d-flex" role="search">
+  <body>
+    <!-- Navbar Code  -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">PIXELS!!</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">Front-End Development</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Backend-End Development</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Join Us</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Contact Us</a>
+            </li>
+          </ul>
+          <!-- <form class="d-flex" role="search">
             <input
               class="form-control me-2"
               type="search"
               placeholder="Search"
               aria-label="Search"
             /> </form> -->
-        <button class="btn btn-outline-success"><a href="form.html" id="login-btn">
-            Login/SignUp
-          </a></button>
-
+          <button class="btn btn-outline-success">
+            <a href="form.html" id="login-btn"> Login/SignUp </a>
+          </button>
+        </div>
       </div>
+    </nav>
+
+    <!-- Banner -->
+    <section id="banner">
+      <div class="banner-text">
+        <h1>PIXELS!!</h1>
+        <p>FEEL THE PRIDE OF OWNING A WEBSITE</p>
+      </div>
+    </section>
+
+    <!-- Image Carousel Code -->
+    <div>
+      <div class="slider-box">
+        <div id="slider">
+          <img src="images/image1.jpg" alt="" />
+          <img src="images/image2.jpg" alt="" />
+          <img src="images/image3.jpg" alt="" />
+        </div>
+        <div class="indicators">
+          <span id="btn1" class="active"></span>
+          <span id="btn2"></span>
+          <span id="btn3"></span>
+        </div>
+      </div>
+      <script>
+        var slide = document.getElementById("slider");
+        var btn1 = document.getElementById("btn1");
+        var btn2 = document.getElementById("btn2");
+        var btn3 = document.getElementById("btn3");
+
+        btn1.onclick = function () {
+          slide.style.transform = "translateX(0px)";
+          btn1.classList.add("active");
+          btn2.classList.remove("active");
+          btn3.classList.remove("active");
+        };
+        btn2.onclick = function () {
+          slide.style.transform = "translateX(-100%)";
+          btn2.classList.add("active");
+          btn1.classList.remove("active");
+          btn3.classList.remove("active");
+        };
+        btn3.onclick = function () {
+          slide.style.transform = "translateX(-200%)";
+          btn3.classList.add("active");
+          btn1.classList.remove("active");
+          btn2.classList.remove("active");
+        };
+      </script>
     </div>
-  </nav>
 
-  <!-- Image Slider Code -->
-  <div>
-    <div class="slider-box">
-      <div id="slider">
-        <img src="images/image1.jpg" alt="">
-        <img src="images/image2.jpg" alt="">
-        <img src="images/image3.jpg" alt="">
+    <!-- Services Code  -->
+    <section id="service">
+      <div class="title-text">
+        <p>SERVICES</p>
+        <h1>We Provide Better</h1>
       </div>
-      <div class="indicators">
-        <span id="btn1" class="active"></span>
-        <span id="btn2"></span>
-        <span id="btn3"></span>
+    </section>
+
+      <!-- Cards Code -->
+      <div class="card-group">
+        <div class="card" style="width: 10rem">
+          <img src="images/frontend-development-tools.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Web-Designing</h5>
+            <p class="card-text">
+              Get best of the designes for your dream website trending in the industry.
+            </p>
+            <a href="#" class="btn btn-primary">View Templates</a>
+          </div>
+        </div>
+        <div class="card" style="width: 10rem">
+          <img src="images/server-management.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Server-Management</h5>
+            <p class="card-text">
+              Get a dedicated expert to manage the server for your website and provide your business a smooth functioning.
+            </p>
+            <a href="#" class="btn btn-primary">Get Now</a>
+          </div>
+        </div>
+        <div class="card" style="width: 10rem">
+          <img src="images/more-soon.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">More Services Coming Soon</h5>
+            <p class="card-text">
+              Keep Visiting us for the more services which will be added soon in near future.
+            </p>
+            <a href="#" class="btn btn-primary">Stay Connected</a>
+          </div>
+        </div>
       </div>
-    </div>
-    <script>
-      var slide = document.getElementById("slider");
-      var btn1 = document.getElementById("btn1");
-      var btn2 = document.getElementById("btn2");
-      var btn3 = document.getElementById("btn3");
 
-      btn1.onclick = function () {
-        slide.style.transform = "translateX(0px)";
-        btn1.classList.add("active");
-        btn2.classList.remove("active");
-        btn3.classList.remove("active");
-      }
-      btn2.onclick = function () {
-        slide.style.transform = "translateX(-100%)";
-        btn2.classList.add("active");
-        btn1.classList.remove("active");
-        btn3.classList.remove("active");
-      }
-      btn3.onclick = function () {
-        slide.style.transform = "translateX(-200%)";
-        btn3.classList.add("active");
-        btn1.classList.remove("active");
-        btn2.classList.remove("active");
-      }
-    </script>
-  </div>
 
-   <!-- Cards Code -->
-   <div class="card-group">
-    <div class="card" style="width: 10rem;">
-      <img src="images/image1.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+    <!-- Footer Code -->
+    <section id="footer">
+      <div class="title-text">
+        <p>CONTACT</p>
+        <h1>Call Us Today</h1>
       </div>
-    </div>
-    <div class="card" style="width: 10rem;">
-      <img src="images/image1.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+      <div class="footer-row">
+        <div class="footer-left">
+          <h1>Query Hours</h1>
+          <p><i class="fa fa-clock-o"></i>Monday to Friday- 9am to 9pm</p>
+          <p><i class="fa fa-clock-o"></i>Saturday and Sunday- 8am to 11pm</p>
+        </div>
+        <div class="footer-right">
+          <h1>Get in Touch</h1>
+          <p>#30 abc Colony, xyz City IN<i class="fa fa-map-marker"></i></p>
+          <p>example@website.com<i class="fa fa-paper-plane"></i></p>
+          <p>9028788988<i class="fa fa-phone"></i></p>
+        </div>
       </div>
-    </div>
-    <div class="card" style="width: 10rem;">
-      <img src="images/image1.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+      <div class="social-links">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-youtube"></i>
+        <p>Copyight &copy; Utkarsh Singh</p>
       </div>
-    </div>
-  </div>
+    </section>
 
-
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"></script>
-  <!-- <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
-      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
-      crossorigin="anonymous" -->
-  ></script>
-</body>
-
+  </body>
 </html>
